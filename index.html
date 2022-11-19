@@ -11,13 +11,15 @@
   <link rel="shortcut icon" href="img/logo.png" />
 </head>
 <body>
-  <nav class="navbar sticky-top nav  navbar-expand-lg navbar-dark">
+
+  <header class="navbar sticky-top nav  navbar-expand-lg navbar-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">Damian Garcia</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarText">
+  
+      <nav class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Inicio</a>
@@ -31,34 +33,37 @@
           <li class="nav-item">
             <a class="nav-link" href="#mislibros">Mis libros</a>
           </li>
-
-
         </ul>
+        </nav>
         <span class="navbar-text">
          «La poesía no quiere adeptos, quiere amantes». – Federico García Lorca.
        </span>
-     </div>
    </div>
- </nav>
 
+</header>
  
  <main>
    <div class="hero">
     <div class="container">
-      <h1>POETA MEXICANO</h1>
+      <h1>EL POETA DEL PUEBLO</h1>
       <p><i class="material-icons">location_on</i> TLAXCALA | MÉXICO</p>
     </div>
   </div>
 
-  <section class="container content">
-    <a name="aboutme">
-      <img src='img/user.jpg' class='imgRedonda'/>
-      <h2 align="center">Damian Garcia</h2>
-      <p align="justify">Es un escritor y poeta mexicano, nacido en Zacatelco, Tlaxcala. Ingeniero en Tecnologias de la información que decidio dedicarse a lo que ama. Es el autor de <strong>Mi querida chica del ceral </strong> y de <strong>Pequeñas cartas de despedida</strong> los cuales escribio de forma independiente,  siendo estos libros el comienzo de una gran aventura.</p></a><br>
-
-      <a name="poemas">
-        <h2>Poemas</h2>
-        <div class="container">
+  <section class="container">
+    <div class="row" id="aboutme">
+          <div class="col-sm-5">
+            <img src='img/user.jpg' class='imgRedonda'/>
+          </div>
+          <div class="col-sm-7">
+            <h2 align="center">Damian Garcia</h2>
+            <p align="justify">Es un escritor y poeta mexicano, nacido en Zacatelco, Tlaxcala. Ingeniero en Tecnologías de la información que decidió dedicarse a lo que verdaderamente ama.</p>
+            <p align="justify">Es el autor de <strong>Mi querida chica del cereal</strong>  y de <strong>Pequeñas cartas de despedida</strong>  los cuales escribió de forma independiente, siendo estos libros el comienzo de una gran aventura. </p>
+          </div>
+    </div>
+     
+    <div id="poemas" class=" margen container">
+      <h2>Poemas</h2>
           <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
               <div class="card">
@@ -75,7 +80,7 @@
                 <img src="img/poema2.jpeg"class="card-img-top" alt="...">
                 <div class="card-body">
                   <h4 align="center" class="card-title">Suerte</h4>
-                  <p align="justify" class="card-text">Con suerte y decides compartir tus ratitos conmigo,tus besos y uno que otro de tus deseos. Con suerte y hasta te quedas conmigo.</p>
+                  <p align="justify" class="card-text">Con suerte y decides compartir tus ratitos conmigo, tus besos y uno que otro de tus deseos. Con suerte y hasta te quedas conmigo.</p>
                 </div>
               </div>
             </div>
@@ -129,7 +134,7 @@
             </div>
 
             <div class="col">
-              <div class="card">
+              <div  class="card ">
                 <img src="img/poema8.jpeg"class="card-img-top" alt="...">
                 <div class="card-body">
                   <h4 align="center" class="card-title">Title</h4>
@@ -150,19 +155,11 @@
               </div>
             </div>
           </div>
-
-
         </div>
 
-
-
-
-      </div><br></a>
-
-      <a name="mislibros">
-        <h3>Mis libros</h3>
-        <div class="contain">
-
+      <h3 class="margen">Mis libros</h3>
+      <div id="mislibros" class="contain">
+       
           <div class="box">
             <a href="https://drive.google.com/file/d/1cSTx8S4Sdum3Dn-3Ep3JInYyYxClLWft/view?usp=share_link">
               <img src="img/page1.png">
@@ -190,20 +187,12 @@
               <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                 <!-- Content -->
                 <h6 class="text-uppercase fw-bold mb-4">
-                  <i class="fas fa-gem me-3 text-secondary"></i>El poeta del pueblo
+                  <p>El poeta del pueblo</p>
                 </h6>
               </div>
               <!-- Grid column -->
-
-
-
-              <!-- Grid column -->
               <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                <p>
-                  <i class="fas fa-envelope me-3 text-secondary"></i>
-                  jafet.damian.fg@gmail.com
-                </p>
-               
+               <a>jafet.damian.fg@gmail.com</a>
               </div>
               <!-- Grid column -->
             </div>
@@ -213,20 +202,13 @@
         <!-- Section: Links  -->
 
         <!-- Copyright -->
-        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+        <div class="text-center p-4" >
           © 2022 Copyright:
           <a class="text-reset fw-bold">Jafet Damian</a>
         </div>
         <!-- Copyright -->
       </footer>
       <!-- Footer -->
-
-
-
-
-
-
-
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     </body>
     </html>
