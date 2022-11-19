@@ -7,6 +7,21 @@ body{
     flex-direction: column;
 }
 
+.nav {
+	padding: 2rem;
+	background-color: transparent;
+	transition: background-color 0.5s, padding 0.5s ease-in-out 0.1s;
+}
+
+.nav.scroll {
+	background-color: #11111195;
+	backdrop-filter: blur(10px);
+	padding: 1rem;
+}
+.navbar-text {
+	/* Texto italico */
+	font-style: italic;
+}
 main {
    flex: 1 0 auto;
   }
@@ -65,9 +80,6 @@ img{
     object-fit: cover;
 }
 
-.nav{
-	background-color: #000000;
-}
 
 .margen{
   margin-top: 1em;
